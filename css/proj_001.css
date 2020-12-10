@@ -5,16 +5,22 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-.center {
-    width: 1280px;
-    margin: 0 auto;
-}
-
 body {
     height: 100%;
 }
 
+.clear {
+    clear: both;
+}
+
+.center {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
 .header {
+    min-width: 1200px;
     width: 100%;
     height: 65px;
     background-color: #212343;
@@ -38,7 +44,7 @@ body {
 }
 
 .form {
-    padding: 10px;
+    padding: 6px;
     width: 400px;
     height: calc(100% + 30px);
     display: inline-block;
@@ -46,9 +52,11 @@ body {
     top: -15;
     border: 8px solid #ccc;
     background-color: white;
+    background-clip: content-box;
 }
 
 .form h2 {
+    padding: 3px;
     text-align: justify;
     color: #999999;
     font-size: 21px;
@@ -59,6 +67,7 @@ body {
 }
 
 .input-conteiner span, form p {
+    padding: 3px;
     display: inline-block;
     width: 100%;
     color: #BBBBBB;
@@ -74,6 +83,7 @@ form p {
 
 
 .input-conteiner input[type=text]{
+    margin-right: 12px;
     margin-top: 8px;
     width: 344px;
     height: 55px;
@@ -81,6 +91,7 @@ form p {
 }
 
 .input-conteiner input[type=email]{
+    margin-right: 12px;
     margin-top: 8px;
     width: 344px;
     height: 55px;
@@ -88,6 +99,7 @@ form p {
 }
 
 .input-conteiner input[type=tel]{
+    margin-right: 12px;
     margin-top: 8px;
     width: 344px;
     height: 55px;
@@ -112,4 +124,94 @@ form p {
 
 .submit input[type=submut]:hover{
     background-color: tomato;
+}
+
+.conteiner-lista {
+    padding: 40px;
+    margin-top: 100px;
+    margin-left: 40px;
+    float: left;
+    width: 519px;
+    height: 270px;
+    background-color: rgba(33, 35, 67, 0.7);
+}
+
+.conteiner-lista ul {
+    list-style-position: inside;
+}
+
+.conteiner-lista ul li {
+    margin-top: 20px;
+    color: white;
+}
+
+.conteiner-2 {
+    padding: 70px 0;
+    background-color: #dddddd;
+    text-align: center;
+}
+
+.conteiner-2 h2 {
+    font-weight: narmal;
+}
+
+.conteiner-2 p {
+    width: 698px;
+    margin: 15px 0;
+    display: inline-block;
+    text-align: justify;
+}
+
+.arrow {
+    position: relative;
+    top: 100px;
+    left: 50%;
+    margin-left: -20px;
+    width: 64px;
+    height: 64px;
+    background-image: url('../imgem/arrow.png');
+}
+
+.section-1 {
+    padding: 90px 0;
+}
+
+.section-1 h2 {
+    text-align: center;
+    color: #462663;
+    font-weight: normal;
+}
+
+.conteiner-section {
+    margin-top: 40px;
+}
+
+.conteiner-section {
+    text-align: center;
+}
+
+.conteiner-single {
+    padding: 30px;
+    float: left;
+    width: 33.333%;
+}
+
+.conteiner-single p {
+    padding: 10px 25px;
+    text-align: justify;
+}
+
+.conteiner-single img {
+    width: 50px;
+}
+
+.footer {
+    border-top: 4px solid #888888;
+    padding: 30px 0;
+    text-align: center;
+    color: #888;
+}
+
+.footer p {
+    margin-top: 8px;
 }
